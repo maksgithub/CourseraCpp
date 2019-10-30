@@ -8,7 +8,7 @@ int main()
     float a, b, c;
     cin >> a >> b >> c;
     auto k = b * b - 4 * a * c;
-    if (k < 0) {
+    if (k < 0 || a == 0 && b == 0) {
         return 0;
     }
     if (a == 0) {
