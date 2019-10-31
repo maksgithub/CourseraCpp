@@ -7,14 +7,13 @@ int main()
 {
     int a, b;
     std::cin >> a >> b;
-
-    while (true)
+    if(b != 0)
     {
-        auto d = a / b;
-        if(d < b)
-        {
-            cout << d;
-            break;
-        }
+        const auto d = a / b;
+        cout << d;
+    }
+    else
+    {
+        cout << "Impossible";
     }
 }
