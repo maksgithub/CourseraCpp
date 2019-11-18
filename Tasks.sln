@@ -21,6 +21,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PolindromVector", "Polindro
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LetterF", "LetterF\LetterF.vcxproj", "{5D5ECF7A-C82B-427F-869A-8D3D346D1708}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "N1", "N1", "{1FA85067-E516-4ED1-A31C-F3C1F23B349E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ConsoleApplication1", "ConsoleApplication1\ConsoleApplication1.vcxproj", "{B1764ED0-1A46-4F97-BF06-16891F7F729D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -93,6 +97,14 @@ Global
 		{5D5ECF7A-C82B-427F-869A-8D3D346D1708}.Release|x64.Build.0 = Release|x64
 		{5D5ECF7A-C82B-427F-869A-8D3D346D1708}.Release|x86.ActiveCfg = Release|Win32
 		{5D5ECF7A-C82B-427F-869A-8D3D346D1708}.Release|x86.Build.0 = Release|Win32
+		{B1764ED0-1A46-4F97-BF06-16891F7F729D}.Debug|x64.ActiveCfg = Debug|x64
+		{B1764ED0-1A46-4F97-BF06-16891F7F729D}.Debug|x64.Build.0 = Debug|x64
+		{B1764ED0-1A46-4F97-BF06-16891F7F729D}.Debug|x86.ActiveCfg = Debug|Win32
+		{B1764ED0-1A46-4F97-BF06-16891F7F729D}.Debug|x86.Build.0 = Debug|Win32
+		{B1764ED0-1A46-4F97-BF06-16891F7F729D}.Release|x64.ActiveCfg = Release|x64
+		{B1764ED0-1A46-4F97-BF06-16891F7F729D}.Release|x64.Build.0 = Release|x64
+		{B1764ED0-1A46-4F97-BF06-16891F7F729D}.Release|x86.ActiveCfg = Release|Win32
+		{B1764ED0-1A46-4F97-BF06-16891F7F729D}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -100,6 +112,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{A7F24779-C2DC-4360-8AFD-33DAA56F1339} = {DAA32C08-CC9F-45E4-9949-7B246897B0EA}
 		{C612D8BE-79D5-43F6-9008-C904F8A30724} = {DAA32C08-CC9F-45E4-9949-7B246897B0EA}
+		{B1764ED0-1A46-4F97-BF06-16891F7F729D} = {1FA85067-E516-4ED1-A31C-F3C1F23B349E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F5FDD14C-5430-4F94-B972-B8B9E411E202}
