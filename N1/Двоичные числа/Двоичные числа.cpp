@@ -2,10 +2,37 @@
 //
 
 #include <iostream>
+#include <vector>
 
 int main()
 {
-    std::cout << "Hello World!\n"; 
+    int d, o;
+    std::cin >> d;
+    std::vector<int> v, vr;
+    while (d > 0)
+    {
+        int b = d;
+        d = d / 2;
+        auto val = b- (d * 2);
+        v.push_back(val);
+    }
+
+
+    while (!v.empty())
+    {
+        vr.push_back(v.back());
+        v.pop_back();
+    }
+
+    bool b = false;
+    for (auto value : vr)
+    {
+        if (value == 1)
+            b = true;
+
+        if(b)
+            std::cout << value;
+    }
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

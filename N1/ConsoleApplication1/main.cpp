@@ -12,7 +12,10 @@ int main()
         return 1;
     auto a = s.find("f");
     if (a > s.length())
+    {
         std::cout << -2;
+        return -1;
+    }
 
     s.replace(a, 1, "3");
 
