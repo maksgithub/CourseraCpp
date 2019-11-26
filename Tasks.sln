@@ -41,6 +41,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Vectors", "Vectors", "{6ABA
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Средняя температура", "Средняя температура\Средняя температура.vcxproj", "{1631D07B-2881-4DBB-94F7-55740A8EECD4}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Очередь", "Очередь\Очередь.vcxproj", "{D8D135CD-6D35-42B7-B798-A1BBE59DB046}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -177,6 +179,14 @@ Global
 		{1631D07B-2881-4DBB-94F7-55740A8EECD4}.Release|x64.Build.0 = Release|x64
 		{1631D07B-2881-4DBB-94F7-55740A8EECD4}.Release|x86.ActiveCfg = Release|Win32
 		{1631D07B-2881-4DBB-94F7-55740A8EECD4}.Release|x86.Build.0 = Release|Win32
+		{D8D135CD-6D35-42B7-B798-A1BBE59DB046}.Debug|x64.ActiveCfg = Debug|x64
+		{D8D135CD-6D35-42B7-B798-A1BBE59DB046}.Debug|x64.Build.0 = Debug|x64
+		{D8D135CD-6D35-42B7-B798-A1BBE59DB046}.Debug|x86.ActiveCfg = Debug|Win32
+		{D8D135CD-6D35-42B7-B798-A1BBE59DB046}.Debug|x86.Build.0 = Debug|Win32
+		{D8D135CD-6D35-42B7-B798-A1BBE59DB046}.Release|x64.ActiveCfg = Release|x64
+		{D8D135CD-6D35-42B7-B798-A1BBE59DB046}.Release|x64.Build.0 = Release|x64
+		{D8D135CD-6D35-42B7-B798-A1BBE59DB046}.Release|x86.ActiveCfg = Release|Win32
+		{D8D135CD-6D35-42B7-B798-A1BBE59DB046}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -192,6 +202,7 @@ Global
 		{F986BEC2-9D4D-488B-931E-3315187AB924} = {DAA32C08-CC9F-45E4-9949-7B246897B0EA}
 		{4A0DE8FB-D1A8-4E89-851B-55A1B79682F7} = {DAA32C08-CC9F-45E4-9949-7B246897B0EA}
 		{1631D07B-2881-4DBB-94F7-55740A8EECD4} = {6ABAF440-CE34-4D22-9CC2-B8AC92908233}
+		{D8D135CD-6D35-42B7-B798-A1BBE59DB046} = {6ABAF440-CE34-4D22-9CC2-B8AC92908233}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F5FDD14C-5430-4F94-B972-B8B9E411E202}
