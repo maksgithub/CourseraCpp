@@ -17,7 +17,7 @@ void main()
         if(command=="NEW_BUS")
         {
             string busName, stopName;
-            int stopsCount;
+            int stopsCount =0;
             std::cin >> busName, stopsCount;
             for (int j = 0; j < stopsCount; ++j)
             {
@@ -40,21 +40,21 @@ void main()
                 cout << "No buses" << endl;
             }
         }
-        else if(command=="STOPS_FOR_BUS")
+        else if (command == "STOPS_FOR_BUS")
         {
-            if(buses.size() > 0)
+            if (buses.size() > 0)
             {
                 for (auto bus : buses)
                 {
                     cout << "Bus " << bus.first << ": "
-                    << GetVectorStr(bus.second) << endl;
+                        << GetVectorStr(bus.second) << endl;
                 }
             }
             else
             {
                 cout << "No buses" << endl;
             }
-        
+        }
     }
 }
 
