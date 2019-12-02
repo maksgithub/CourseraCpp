@@ -1,9 +1,18 @@
 #include <iostream>
 #include <map>
 #include <vector>
-#include "VectorsHelper.h"
 
 using namespace std;
+std::string GetVectorStr(vector<string> vector)
+{
+    string res;
+    for (auto value : vector)
+    {
+        res += value + " ";
+    }
+    return res;
+}
+
 void main()
 {
     int q;
@@ -14,33 +23,18 @@ void main()
     {
         string command;
         std::cin >> command;
-        if(command=="NEW_BUS")
+        if (command == "NEW_BUS")
         {
             string busName, stopName;
-            int stopsCount =0;
-            std::cin >> busName, stopsCount;
+            int stopsCount = 0;
+            std::cin >> busName >> stopsCount;
             for (int j = 0; j < stopsCount; ++j)
             {
                 cin >> stopName;
                 buses[busName].push_back(stopName);
             }
         }
-        else if(command=="ALL_BUSES")
-        {
-            if(buses.size() > 0)
-            {
-                for (auto bus : buses)
-                {
-                    cout << "Bus " << bus.first << ": "
-                    << GetVectorStr(bus.second) << endl;
-                }
-            }
-            else
-            {
-                cout << "No buses" << endl;
-            }
-        }
-        else if (command == "STOPS_FOR_BUS")
+        else if (command == "ALL_BUSES")
         {
             if (buses.size() > 0)
             {
@@ -53,6 +47,41 @@ void main()
             else
             {
                 cout << "No buses" << endl;
+            }
+        }
+        else if (command == "BUSES_FOR_STOP")
+        {
+            string stopName;
+            cin >> stopName;
+            string res;
+            for (auto bus : buses)
+            {
+                    if (std::find(bus.second.begin(), bus.second.end(), stopName)
+                        != bus.second.end()) {
+                        res += bus.first + " ";
+                    }
+            }
+            if (res.empty())
+            {
+                std::cout << "No stop" << endl;;
+            }
+            else
+            {
+                std::cout << "Stop " << stopName << ":" << res << endl;
+            }
+        }
+        else if (command == "STOPS_FOR_BUS")
+        {
+            string busName;
+            cin >> busName;
+            if (buses[busName].empty())
+            {
+                std::cout << "No bus" << endl;;
+            }
+            else
+            {
+                std::cout << "Bus " << busName << ":"
+                    << GetVectorStr(buses[busName]) << endl;;
             }
         }
     }

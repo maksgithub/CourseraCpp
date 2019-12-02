@@ -3,19 +3,14 @@
 #include <iostream>
 #include <vector>
 
-void PrintVector(std::vector<std::string> vector)
-{
-    for (auto value : vector)
-    {
-        std::cout << value << " ";
-    }
-}
+using namespace std;
 
-std::string GetVectorStr(std::vector<std::string> vector)
+std::string GetVectorStr(vector<string> vector)
 {
-    std::string res;
-    for (auto value : vector)
+    string res;
+    /*for (auto value : vector)
     {
         res += value + " ";
-    }
+    }*/
+    return res;
 }
