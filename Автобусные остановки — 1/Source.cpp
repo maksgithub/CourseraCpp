@@ -16,18 +16,18 @@ std::string GetVectorStr(vector<string> vector)
 void main()
 {
     int q;
-    std::cin >> q;
+    cin >> q;
     map<string, vector<string>> buses;
 
     for (int i = 0; i < q; ++i)
     {
         string command;
-        std::cin >> command;
+        cin >> command;
         if (command == "NEW_BUS")
         {
             string busName, stopName;
             int stopsCount = 0;
-            std::cin >> busName >> stopsCount;
+            cin >> busName >> stopsCount;
             for (int j = 0; j < stopsCount; ++j)
             {
                 cin >> stopName;
@@ -56,18 +56,14 @@ void main()
             string res;
             for (auto bus : buses)
             {
-                    if (std::find(bus.second.begin(), bus.second.end(), stopName)
-                        != bus.second.end()) {
-                        res += bus.first + " ";
-                    }
+                if (find(bus.second.begin(), bus.second.end(), stopName)
+                    != bus.second.end()) {
+                    res += bus.first + " ";
+                }
             }
-            if (res.empty())
+            if (!res.empty())
             {
-                std::cout << "No stop" << endl;;
-            }
-            else
-            {
-                std::cout << "Stop " << stopName << ":" << res << endl;
+                cout << res << endl;
             }
         }
         else if (command == "STOPS_FOR_BUS")
@@ -80,8 +76,28 @@ void main()
             }
             else
             {
-                std::cout << "Bus " << busName << ":"
-                    << GetVectorStr(buses[busName]) << endl;;
+                for (auto stop : buses[busName])
+                {
+                    std::cout << "Stop " << stop << " ";
+                    string res;
+                    for (auto bus : buses)
+                    {
+                        if (std::find(bus.second.begin(), bus.second.end(), stop)
+                            != bus.second.end()) {
+                            res += bus.first + " ";
+                        }
+                    }
+                    if (res.empty())
+                    {
+                        std::cout << "!!!!" << endl;;
+                    }
+                    else
+                    {
+                        std::cout << res << endl;
+                    }
+                }
+                /*std::cout << "Bus " << busName << ":"
+                    << GetVectorStr(buses[busName]) << endl;;*/
             }
         }
     }
