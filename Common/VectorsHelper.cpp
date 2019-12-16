@@ -5,12 +5,16 @@
 
 using namespace std;
 
-std::string GetVectorStr(vector<string> vector)
+std::string VectorToString(vector<string> vector)
 {
     string res;
-    /*for (auto value : vector)
+    for (auto value : vector)
     {
         res += value + " ";
-    }*/
+    }
     return res;
+}
+
+std::string MapToString(std::vector<std::string> vector)
+{
 }

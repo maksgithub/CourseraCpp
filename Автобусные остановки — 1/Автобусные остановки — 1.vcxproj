@@ -21,6 +21,11 @@
   <ItemGroup>
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.vcxproj">
+      <Project>{1b42b778-6dc7-4496-b0f7-44b773b77233}</Project>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{7DCA94DA-D597-4953-82D4-C57749F3548C}</ProjectGuid>

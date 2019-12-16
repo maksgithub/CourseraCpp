@@ -2,5 +2,5 @@
 #include <string>
 #include <vector>
 
-//void PrintVector(std::vector<std::string> vector);
-std::string GetVectorStr(std::vector<std::string> vector);
+__declspec(dllexport) std::string VectorToString(std::vector<std::string> vector);
+__declspec(dllexport) std::string MapToString(std::vector<std::string> vector);

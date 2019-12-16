@@ -1,17 +1,9 @@
 #include <iostream>
 #include <map>
 #include <vector>
+#include <VectorsHelper.h>
 
 using namespace std;
-std::string GetVectorStr(vector<string> vector)
-{
-    string res;
-    for (auto value : vector)
-    {
-        res += value + " ";
-    }
-    return res;
-}
 
 void main()
 {
@@ -41,7 +33,7 @@ void main()
                 for (auto bus : buses)
                 {
                     cout << "Bus " << bus.first << ": "
-                        << GetVectorStr(bus.second) << endl;
+                        << VectorToString(bus.second) << endl;
                 }
             }
             else
@@ -97,7 +89,7 @@ void main()
                     }
                 }
                 /*std::cout << "Bus " << busName << ":"
-                    << GetVectorStr(buses[busName]) << endl;;*/
+                    << VectorToString(buses[busName]) << endl;;*/
             }
         }
     }
